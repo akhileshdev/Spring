@@ -9,7 +9,8 @@
                    
 
 <bean id = "studentbean" class = "com.java.spring.ci.Student">
-  <constructor-arg value = "101"></constructor-arg>
+  <constructor-arg value = "101" type = "int"></constructor-arg>
+  <constructor-arg value = "Akhilesh" type = "String"></constructor-arg>
 </bean>
 
 </beans>
