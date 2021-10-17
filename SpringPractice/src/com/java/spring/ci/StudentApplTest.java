@@ -1,11 +1,11 @@
-package com.java.spring.demo;
+package com.java.spring.ci;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
-public class StudentAppl {
+public class StudentApplTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,8 +14,8 @@ public class StudentAppl {
 		BeanFactory factory = new XmlBeanFactory(resource);
 		
 		Student student = (Student)factory.getBean("studentbean");
-        
-		student.display();		
+		
+		System.out.println(student);
 	}
 
 }
