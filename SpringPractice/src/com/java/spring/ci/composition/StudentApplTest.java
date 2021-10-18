@@ -15,7 +15,6 @@ public class StudentApplTest {
 		
 		Student student = (Student)factory.getBean("studentbean");
 		System.out.println(student);
-		
 	}
 
 }
