@@ -1,4 +1,4 @@
-package com.java.spring.ci.collection;
+package com.java.spring.ci.collection.set;
 
 import java.util.List;
 import java.util.Set;
@@ -7,21 +7,15 @@ public class Question {
 
 	private int id;
 	private String name;
+		
+	private Set<String> answers;
 	
-	private List<String> answers;	
-	//private Set<String> answers;
-	
-	public Question(int id, String name, List<String> answers) {
+	public Question(int id, String name, Set<String> answers) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.answers = answers;
 	}	
-	
-//	@Override
-//	public String toString() {
-//		return "Question [id=" + id + ", name=" + name + ", answers=" + answers + "]";
-//	}
 	
 	public void display()
 	{

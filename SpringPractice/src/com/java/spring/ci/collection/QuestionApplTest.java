@@ -16,12 +16,9 @@ public class QuestionApplTest {
 		
 		
 		 ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-	       Question question = context.getBean("questionbean", Question.class);  
-	      // s.show();
+	     Question question = context.getBean("questionbean", Question.class);  		
 		
-		
-//		Question question = (Question)factory.getBean("questionbean");
-		
+//		Question question = (Question)factory.getBean("questionbean");		
 //		System.out.println(question);	
 		
 		question.display();

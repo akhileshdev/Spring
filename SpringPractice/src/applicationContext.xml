@@ -9,16 +9,16 @@
                    
 
 
-<bean id = "questionbean" class = "com.java.spring.ci.collection.Question">
+<bean id = "questionbean" class = "com.java.spring.ci.collection.set.Question">
   <constructor-arg value = "101"></constructor-arg>
   <constructor-arg value = "What is Java ?"></constructor-arg>
   <constructor-arg>
      
-     <list>
+     <set>
         <value>It is a programming language</value>
         <value>It is an OOPS Paradigm</value>
         <value>It is not pure Object Oriented Programming language</value>
-     </list>
+     </set>
  
   </constructor-arg>
 </bean>
