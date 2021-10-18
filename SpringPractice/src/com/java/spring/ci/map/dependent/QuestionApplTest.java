@@ -13,5 +13,4 @@ public class QuestionApplTest {
 		
 		question.display();
 	}
-
 }
