@@ -7,29 +7,15 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">                     
 
+<bean id = "employeebean" class = "com.java.spring.si.Employee">
 
-<bean id = "addr" class = "com.java.spring.si.dependent.Address">
-
-<property name = "street">
- <value>Kondapur</value>
+<property name = "id">
+ <value>101</value>
 </property>
 
-<property name = "city">
- <value>Hyderabad</value>  
+<property name = "name">
+ <value>Akhilesh</value>  
 </property> 
-
-<property name = "state">
- <value>Telangana</value>  
-</property> 
- 
-</bean>
-
-
-<bean id = "employeebean" class = "com.java.spring.si.dependent.Employee">
-
-<property name = "id" value = "101"/>
-<property name = "name" value = "Akhilesh"/>
-<property name = "address" ref = "addr"/>
  
 </bean>
 
