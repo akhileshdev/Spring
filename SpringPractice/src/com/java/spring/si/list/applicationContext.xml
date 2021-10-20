@@ -8,11 +8,10 @@
                         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">                     
 
 
-<bean id = "employeebean" class = "com.java.spring.si.list.Employee">
+<bean id = "employeebean" class = "com.java.spring.si.dependent.Employee">
 
 <property name = "id" value = "101"/>
 <property name = "name" value = "Akhilesh"/>
-
 <property name = "songs">
 
 <list>
