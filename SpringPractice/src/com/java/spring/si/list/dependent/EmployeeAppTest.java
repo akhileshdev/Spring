@@ -1,4 +1,4 @@
-package com.java.spring.si.list;
+package com.java.spring.si.list.dependent;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,7 +9,8 @@ public class EmployeeAppTest {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Employee emp = context.getBean("employeebean",Employee.class);		
+		Employee emp = context.getBean("employeebean", Employee.class);
 		System.out.println(emp);
 	}
+
 }
