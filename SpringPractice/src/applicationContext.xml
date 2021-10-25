@@ -7,16 +7,38 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">                     
 
+<bean id = "land1" class = "com.java.spring.si.map.dependent.Landmark">
+<property name = "mark" value = "Swimming Pool"/>
+<property name = "locality" value = "Raghawendra Colony"/>
+</bean>
 
-<bean id = "employeebean" class = "com.java.spring.si.map.Employee">
+<bean id = "land2" class = "com.java.spring.si.map.dependent.Landmark">
+<property name = "mark" value = "Statue"/>
+<property name = "locality" value = "100 feet road"/> 
+</bean>
+
+<bean id = "addr1" class = "com.java.spring.si.map.dependent.Address">
+<property name = "street" value = "Road No 1C"/>
+<property name = "city" value = "Hyderabad"/>
+<property name = "state" value = "Telangana"/>
+</bean>
+
+
+<bean id = "addr2" class = "com.java.spring.si.map.dependent.Address">
+<property name = "street" value = "Old Market"/>
+<property name = "city" value = "Madhubani"/>
+<property name = "state" value = "Bihar"/>
+</bean>
+
+<bean id = "employeebean" class = "com.java.spring.si.map.dependent.Employee">
 
 <property name = "id" value = "101"/>
 <property name = "name" value = "Akhilesh"/>
 <property name = "address">
 
 <map>
-<entry key = "Kondapur" value = "Hyderabad"/>
-<entry key = "Madhapur" value = "Hyderabad"/>
+<entry key-ref = "land1" value-ref = "addr1"/>
+<entry key-ref = "land2" value-ref = "addr2"/>
 </map>
 
 </property>
