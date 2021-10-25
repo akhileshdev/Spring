@@ -8,29 +8,16 @@
                         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">                     
 
 
-<bean id = "addr1" class = "com.java.spring.si.list.dependent.Address">
-<property name = "street" value = "Kondapur"/>
-<property name = "city" value = "Hyderabad"/>
-<property name = "state" value = "Telangana"/> 
-</bean>
-
-<bean id = "addr2" class = "com.java.spring.si.list.dependent.Address">
-<property name = "street" value = "Madhapur"/>
-<property name = "city" value = "Hyderabad"/>
-<property name = "state" value = "Telangana"/> 
-</bean>
-
-
-<bean id = "employeebean" class = "com.java.spring.si.list.dependent.Employee">
+<bean id = "employeebean" class = "com.java.spring.si.map.Employee">
 
 <property name = "id" value = "101"/>
 <property name = "name" value = "Akhilesh"/>
-<property name = "addresses">
+<property name = "address">
 
-<list>
-<ref bean = "addr1"/>
-<ref bean = "addr2"/>
-</list>
+<map>
+<entry key = "Kondapur" value = "Hyderabad"/>
+<entry key = "Madhapur" value = "Hyderabad"/>
+</map>
 
 </property>
  
